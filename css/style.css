@@ -57,7 +57,8 @@ nav {
 section {
     grid-area: section;
     display: grid;
-    grid-template-columns:  1fr 1fr 1fr;
+    grid-template-areas: "g1 g2 g3 g4";
+    grid-template-columns:   1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr;
     gap: 10px;
     background-color: #f9f9f9;
@@ -65,6 +66,19 @@ section {
     padding-bottom: 90px;
     border-radius: 10px;
 }
+.p1{
+grid-area: g1;
+}
+.p2{
+    grid-area: g2;
+}
+.p3{
+grid-area: g3;
+}
+.p4{
+grid-area: g4;
+}
+
 
 aside {
     grid-area: aside;
