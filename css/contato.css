@@ -135,7 +135,7 @@ footer {
     
 }
 nav a:hover{
-background-color: #000;
+background-color: 000;
 color: white;
 transition-duration: 1s;
 }
@@ -152,5 +152,5 @@ nav li {
 
 a{
     text-decoration: none;
-    color: 000000;
+    color: #000000;
 }
