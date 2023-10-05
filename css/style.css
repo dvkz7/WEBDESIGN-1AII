@@ -1,3 +1,12 @@
+@charset "UTF-8";
+
+:root{
+--cor1: #5b5b58;
+--cor0:#d3d3d3;
+--cor2:#474A51;
+--cor3: #a9a9a9;
+
+}
 body {
     display: grid;
     grid-template-areas: "header header header"
@@ -9,15 +18,15 @@ body {
     grid-template-columns: 1fr 1fr 1fr;
     gap: 10px;
     height: 100vh;
-    font-family: sans-serif;  
+    font-family: sans-serif; 
+    background-color: var(--cor0);
+
 }
 
 header{
     grid-area: header;
-    background-color: #164E61;
+  background-color: var(--cor2);
     border-radius: 30px;
-    border: 1px solid #164E61;
-    
 }
 
 .i1{
@@ -41,17 +50,19 @@ header{
 
 h1{
     grid-area: header;
-    font-size: 35px;
+    font-size: 2em;
     align-self: center;
-    justify-self: left;
+    justify-self: center;
     padding-left: 140px;
+
 }
 
 nav {
     grid-area: nav;
-    background-color: #164E61;
+ background-color: var(--cor2);
     padding: 10px;
     border-radius: 10px;
+    
 }
 
 /*modificar apartir daq*/
@@ -63,10 +74,11 @@ section {
     grid-template-columns:   1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr;
     gap: 10px;
-    background-color: #f9f9f9;
+    background-color: white;
     padding: 10px;
     padding-bottom: 90px;
     border-radius: 10px;
+    
 }
 .p1{
 grid-area: g1;
@@ -84,35 +96,48 @@ grid-area: g4;
 
 aside {
     grid-area: aside;
-    background-color: #f9f9f9;
+    background-color: white;
     padding: 10px;
-    
+    margin: 5px;
+    border: 1 solid white;
+    border-radius: 10px;
 }
 
 footer {
     grid-area: footer;
-    background-color: #ccc;
-    padding: 10px;
+   background-color: var(--cor2);
+    padding: 0x;
     position: fixed;
     left: 0;
     bottom: 0;
     width: 100%;
-    text-align: center;
-    border-top: 2px solid #696969;
-    
+    text-align: left;
+    border: 1px solid white;
+    border-radius: 10px;
+    color: #000000;
 }
-
+aside a{
+width: 200px;
+height: 94vh;
+background-repeat: no-repeat;
+}
 nav ul {
     list-style-type: none;
-    padding: 0;
+    padding: 2px;
 }
 
 nav li {
     display: inline;
-    margin-right: 10px;
+    margin:5px;
 }
 
 a{
     text-decoration: none;
-    color: #000000;
+    color: black;
+}
+nav a:hover{
+background-color: 000;
+color: white;
+text-decoration: none;
+transition-duration: 1.2s;
 }

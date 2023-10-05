@@ -1,3 +1,12 @@
+@charset "UTF-8";
+
+:root{
+    --cor1: #5b5b58;
+    --cor0:#d3d3d3;
+    --cor2:#474A51;
+    --cor3: #a9a9a9;
+}
+
 body {
     display: grid;
     grid-template-areas: "header header header"
@@ -9,14 +18,14 @@ body {
     grid-template-columns: 1fr 1fr 1fr;
     gap: 10px;
     height: 100vh;
-    font-family: sans-serif;  
+    font-family: sans-serif; 
+    background-color: var(--cor0); 
 }
 
 header{
     grid-area: header;
-    background-color: #164E61;
-    border: 1px solid #164E61;
-    border-radius: 30px;
+background-color: var(--cor2);
+    border-radius: 17px;
 }
 
 .i1{
@@ -42,14 +51,14 @@ h1{
     grid-area: header;
     font-size: 35px;
     align-self: center;
-    justify-self: left;
+    justify-self: center;
     padding-left: 140px;
 }
 
 
 nav {
     grid-area: nav;
-    background-color: #164E61;
+   background-color: var(--cor2);
     padding: 10px;
     border-radius: 10px;
 }
@@ -79,7 +88,7 @@ nav {
 button{
    
         border-radius: 10px;
-        background-color: #756c6c;;
+       background-color: var(--cor1);
         border: none;
         color: white;
     }
@@ -94,7 +103,7 @@ section {
 
 footer {
     grid-area: footer;
-    background-color: #ccc;
+   background-color: var(--cor2);
     padding: 10px;
     position: fixed;
     left: 0;
@@ -103,6 +112,11 @@ footer {
     text-align: center;
     border-top: 2px solid #696969;
     
+}
+nav a:hover{
+background-color: 000;
+color: #d3d3d3;
+transition-duration: 1.2s;
 }
 
 nav ul {
