@@ -25,8 +25,9 @@ body {
 
 header{
     grid-area: header;
-  background-color: var(--cor2);
-    border-radius: 30px;
+    background-color: var(--cor2);
+      border: 1px solid #1FA2DB;
+      border-radius: 17px;
 }
 
 .i1{
@@ -59,7 +60,7 @@ h1{
 
 nav {
     grid-area: nav;
- background-color: var(--cor2);
+    background-color: var(--cor2);
     padding: 10px;
     border-radius: 10px;
     
