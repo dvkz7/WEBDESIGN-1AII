@@ -1,144 +1,138 @@
 @charset "UTF-8";
 
-:root{
---cor1: #5b5b58;
---cor0:#d3d3d3;
---cor2:#474A51;
---cor3: #a9a9a9;
-
+:root {
+  --cor1: #5b5b58;
+  --cor0: #d3d3d3;
+  --cor2: #474a51;
+  --cor3: #a9a9a9;
 }
 body {
-    display: grid;
-    grid-template-areas: "header header header"
-                         "nav nav nav"
-                         "section section aside"
-                         "footer footer footer";
+  display: grid;
+  grid-template-areas:
+    "header header header"
+    "nav nav nav"
+    "section section aside"
+    "footer footer footer";
 
-    grid-template-rows: auto auto 1fr auto;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 10px;
-    height: 100vh;
-    font-family: sans-serif; 
-    background-color: var(--cor0);
-
+  grid-template-rows: auto auto 1fr auto;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 10px;
+  height: 100vh;
+  font-family: sans-serif;
+  background-color: var(--cor0);
 }
 
-header{
+header {
     grid-area: header;
     background-color: var(--cor2);
-      border: 1px solid #1FA2DB;
-      border-radius: 17px;
+        border-radius: 17px;
 }
 
-.i1{
-    grid-area: header;
-    height: 100px;
-    align-self: center;
-    padding: 5px;
+.i1 {
+  grid-area: header;
+  height: 100px;
+  align-self: center;
+  padding: 5px;
 }
 
-.iconlink{
-    grid-area: header;
-    justify-self: end;
-    align-self: end;
-    padding-right: 10px;
-    padding-bottom: 5px;
+.iconlink {
+  grid-area: header;
+  justify-self: end;
+  align-self: end;
+  padding-right: 10px;
+  padding-bottom: 5px;
 }
 
-.i2{
-    height: 40px;
+.i2 {
+  height: 40px;
 }
 
-h1{
-    grid-area: header;
-    font-size: 2em;
-    align-self: center;
-    justify-self: center;
-    padding-left: 140px;
-
+h1 {
+  grid-area: header;
+  font-size: 2em;
+  align-self: center;
+  justify-self: center;
+  padding-left: 140px;
 }
 
 nav {
     grid-area: nav;
     background-color: var(--cor2);
-    padding: 10px;
-    border-radius: 10px;
-    
+     padding: 10px;
+     border-radius: 10px;
 }
 
 /*modificar apartir daq*/
 
 section {
-    grid-area: section;
-    display: grid;
-    grid-template-areas: "g1 g2 g3 g4";
-    grid-template-columns:   1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr;
-    gap: 10px;
-    background-color: white;
-    padding: 10px;
-    padding-bottom: 90px;
-    border-radius: 10px;
-    
+  grid-area: section;
+  display: grid;
+  grid-template-areas: "g1 g2 g3 g4";
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 10px;
+  background-color: white;
+  padding: 10px;
+  padding-bottom: 90px;
+  border-radius: 10px;
 }
-.p1{
-grid-area: g1;
+.p1 {
+  grid-area: g1;
 }
-.p2{
-    grid-area: g2;
+.p2 {
+  grid-area: g2;
 }
-.p3{
-grid-area: g3;
+.p3 {
+  grid-area: g3;
 }
-.p4{
-grid-area: g4;
+.p4 {
+  grid-area: g4;
 }
-
 
 aside {
-    grid-area: aside;
-    background-color: white;
-    padding: 10px;
-    margin: 5px;
-    border: 1 solid white;
-    border-radius: 10px;
+  grid-area: aside;
+  background-color: white;
+  padding: 10px;
+  margin: 5px;
+  border: 1 solid white;
+  border-radius: 10px;
 }
 
 footer {
-    grid-area: footer;
-   background-color: var(--cor2);
-    padding: 0x;
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    text-align: left;
-    border: 1px solid white;
-    border-radius: 10px;
-    color: #000000;
+  grid-area: footer;
+  background-color: var(--cor2);
+  padding: 0x;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  text-align: left;
+  border: 1px solid white;
+  border-radius: 10px;
+  color: #000000;
 }
-aside a{
-width: 200px;
-height: 94vh;
-background-repeat: no-repeat;
+aside a {
+  width: 200px;
+  height: 94vh;
+  background-repeat: no-repeat;
 }
 nav ul {
-    list-style-type: none;
-    padding: 2px;
+  list-style-type: none;
+  padding: 2px;
 }
 
 nav li {
-    display: inline;
-    margin:5px;
+  display: inline;
+  margin: 5px;
 }
 
-a{
-    text-decoration: none;
-    color: black;
+a {
+  text-decoration: none;
+  color: black;
 }
-nav a:hover{
-background-color: 000;
-color: white;
-text-decoration: none;
-transition-duration: 1.2s;
+nav a:hover {
+  background-color: 000;
+  color: white;
+  text-decoration: none;
+  transition-duration: 1.2s;
 }
