@@ -91,7 +91,7 @@ hr{
 
 button{
     border-radius: 10px;
-    background-color: var(--cor3);
+    background-image: linear-gradient(to bottom , #5b5b58,#474A51);
     border: none;
     color: white;
     justify-self: normal;

@@ -23,8 +23,9 @@ body {
 
 header{
     grid-area: header;
-background-color: var(--cor2);
-    border-radius: 17px;
+    background-color: var(--cor2);
+      border-radius: 30px;
+  
 }
 
 .i1{
@@ -109,7 +110,7 @@ footer {
     bottom: 0;
     width: 100%;
     text-align: left;
-    border-top: 2px solid #1FA2DB;
+    border-top: 2px solid var(--cor2);
     
 }
 nav a:hover {

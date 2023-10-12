@@ -81,7 +81,7 @@ section {
 }
 
 button{
-    background-image: linear-gradient(to bottom ,#4892E1 ,#046CDB , #0353A8 ,#1D3C5C,#022D5B);
+    background-image: linear-gradient(to bottom , #5b5b58,#474A51);
     color: #fff;
     padding: 10px 20px;
     border: none;

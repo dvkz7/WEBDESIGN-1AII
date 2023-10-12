@@ -23,9 +23,9 @@ body {
 }
 
 header {
-    grid-area: header;
-    background-color: var(--cor2);
-        border-radius: 17px;
+     grid-area: header;
+  background-color: var(--cor2);
+    border-radius: 30px;
 }
 
 .i1 {
